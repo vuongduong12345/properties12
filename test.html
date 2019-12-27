@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Properties Component</title>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <properties myprop="Chao ban nha!!!"></properties>
+</div>
+<script>
+    Vue.component('properties', {
+       props: ['myprop'],
+        template: '<h1> {{myprop}} </h1>'
+    });
+    new Vue({
+       el: '#app',
+       data: {
+       }
+    });
+</script>
+</body>
+</html>
